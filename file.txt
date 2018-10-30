@@ -1,0 +1,10 @@
+public class Solution{
+    public static boolean isValid(int a){
+        if(a*4 == 12){
+            return true;
+        }else{
+            return false;
+        }
+    }
+}
+
