@@ -14,7 +14,7 @@ Token串：\<Token类型，字符串>
 
 （Token类型：Keyword)
 
-public	private	class	while	do		if	
+public	private	class	while	do		if		void		try		catch
 
 else		return	static	int		float	boolean
 
