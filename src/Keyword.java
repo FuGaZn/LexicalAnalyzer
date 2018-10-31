@@ -4,7 +4,7 @@ import java.util.List;
 
 public class Keyword {
     private static String[] strs = new String[]{"public", "private", "class", "while", "do", "if", "else",
-            "return", "static", "int", "float", "boolean"};
+            "return", "static", "int", "float", "boolean", "void", "try", "catch"};
 
     public static boolean contains(String s) {
         for (String str : strs) {

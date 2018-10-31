@@ -28,8 +28,6 @@ public class Main {
                 }
                 if (a != -1) {
                     char c = (char) a;
-
-                    //  System.out.print(c);
                     if (!isWhiteSpace(c)) {
 
                         switch (c) {
@@ -157,6 +155,11 @@ public class Main {
         }
     }
 
+    /**
+     * 判断字符是否是空白符
+     * @param c
+     * @return
+     */
     public static boolean isWhiteSpace(char c) {
         char[] whites = new char[]{'\n', '\t', '\r', ' ', '\b', '\f'};
         for (char d : whites) {
@@ -166,12 +169,22 @@ public class Main {
         return false;
     }
 
+    /**
+     * 判断数据是否是int型
+     * @param s
+     * @return
+     */
     public static boolean isInt(String s) {
         Pattern pattern = Pattern.compile("[0-9]+");
         Matcher matcher = pattern.matcher(s);
         return matcher.matches();
     }
 
+    /**
+     * 判断数据是否是float型
+     * @param s
+     * @return
+     */
     public static boolean isFloat(String s) {
         Pattern pattern = Pattern.compile("[0-9]*\\.*[0-9]+");
         Matcher matcher = pattern.matcher(s);

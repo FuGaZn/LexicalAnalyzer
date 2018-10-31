@@ -1,6 +1,6 @@
 public class Token {
-    String token;
-    String lexeme;
+    String token;   //token类型
+    String lexeme;  //单词
 
     public Token(String token, String lexeme) {
         this.token = token;
